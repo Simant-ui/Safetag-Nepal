@@ -152,7 +152,7 @@ export default function PublicContactPage() {
                 {view.vehicleNumber}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {view.vehicleTypeLabel}
+                {[view.vehicleTypeLabel, view.vehicleBrand, view.vehicleModel].filter(Boolean).join(' · ')}
               </Typography>
             </Stack>
           )}

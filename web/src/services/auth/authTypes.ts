@@ -14,8 +14,8 @@ export interface AuthSession {
 
 export interface RegisterProfileInput {
   name: string;
-  email?: string;
+  email: string;
   bloodGroup?: string;
   emergencyContact?: string;
-  address?: string;
+  address: string;
 }

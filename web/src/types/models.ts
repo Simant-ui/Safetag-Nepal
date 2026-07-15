@@ -70,6 +70,8 @@ export interface PublicOwnerView {
   maskedPhoneHint?: string;
   vehicleNumber?: string;
   vehicleTypeLabel?: string;
+  vehicleBrand?: string;
+  vehicleModel?: string;
   bloodGroup?: string;
   emergencyNote?: string;
   businessName?: string;

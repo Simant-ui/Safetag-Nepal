@@ -36,6 +36,8 @@ export async function buildPublicOwnerView(qrId: string): Promise<PublicOwnerVie
       ...base,
       vehicleNumber: vehicle?.vehicleNumber,
       vehicleTypeLabel: vehicle ? labelForVehicleType(vehicle.vehicleType) : undefined,
+      vehicleBrand: vehicle?.brand,
+      vehicleModel: vehicle?.model,
     };
   }
 

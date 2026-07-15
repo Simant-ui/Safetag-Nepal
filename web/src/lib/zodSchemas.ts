@@ -12,10 +12,10 @@ export const verifyOtpSchema = z.object({
 
 export const completeProfileSchema = z.object({
   name: z.string().min(1),
-  email: z.string().email().optional(),
+  email: z.string().email('Enter a valid email address.'),
   bloodGroup: z.string().optional(),
   emergencyContact: z.string().optional(),
-  address: z.string().optional(),
+  address: z.string().min(1, 'Address is required.'),
 });
 
 export const updateProfileSchema = completeProfileSchema.partial().extend({
